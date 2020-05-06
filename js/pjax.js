@@ -1,0 +1,1 @@
+const pjax=new Pjax({selectors:["title",".js-Pjax","aside","#yun-config"]});document.addEventListener("pjax:send",function(){if(console.log("yes"),window.aplayers){for(let e=0;e<window.aplayers.length;e++)window.aplayers[e].destroy();window.aplayers=[]}}),document.addEventListener("pjax:success",function(){window.aplayers&&loadMeting()},!1);
